@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root', // Es lo que nos crea la etiqueta de HTML
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet], // Aqui va todo lo que necesitamos usar de nuestras importaciones
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Frontend';
+
+  message: string = "hello a todos"
+
+  
 }
